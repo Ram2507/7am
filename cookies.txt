@@ -1,0 +1,130 @@
+
+
+	Session Management or State Management Objects
+	
+	To maintain the identity of the application
+	PHP provides two objects, they are:
+	Cookie
+	Session.
+	
+	Why shuold we use cookie and session?
+	
+	To know this, We have know about the Protocols
+	
+	Protocol: A protocol is a set of rules and
+	regulations to transfer the data between the networks
+	
+	Generally protocols are divided into Two types:
+	1. Stateless Protocols
+	2. Statefull Protocols
+	
+	Stateless Protocols:
+	===================
+	The protocols which does not remember the previous
+	requests data are said to be stateless protocols.
+	
+	Examples: http, https
+	
+	Statefull Protocols:
+	===================
+	The protocols which can remember the previous
+	requests data are said to be statefull protocols.
+	
+	Examples: ftp, TCP/IP etc..
+	
+	
+	Here, we can always see stateless protocols in web
+	networks to transfer the data.
+	
+	we know, if we use stateless protocols we can not
+	get the previous request and response data.
+	
+	=========================
+	TO bring previous request and response data to the
+	current page we can use either COOKIE or SESSION
+	=========================
+	
+	Cookie:
+	========
+	A Cookie a small amount of data which always stores
+	inside a Browser.
+	
+	Creating a cookie:
+	===================
+	BY using setcookie() method we can create cookies
+	
+	setcookie("cookie name","cookie value");
+	
+	setcookie("state","TS");
+	setcookie("city","Hyd");
+	
+	Cookies are browser independent means, the cookies
+	which are created in one browser can not access
+	in other browsers
+	
+	Cookies are divided into two types, they are:
+	in-memory cookies
+	Persistent cookies
+	
+	in-memory cookies:
+	==================
+	The cookies which are created with out expiry time
+	are said to be in-memory cookies
+	
+	ex: setcookie("number1",10);
+	
+	In-memory cookies are destroyed automatically, when
+	we close the browser
+	
+	Persistent cookies:
+	==================
+	The cookies which are created with expiry time
+	are said to be persistent cookies
+	
+	ex: setcookie("number1",10,time()+60*60*24);//1day
+		setcookie("number1",10,time()+2*60);//2mins
+	
+	Persistent cookies are destroyed automatically, 
+	when the expiry time is completed.
+	
+	How to destroy persistent cookie
+	
+		(or)
+		
+	How to destroy cookie
+	========================
+	
+	By setting negative time for the cookie
+	
+	setcookie("number1",10,time()-60*60*24);
+	
+	
+	
+	How read Cookie values:
+	=======================
+	by using $_COOKIE[] super global Variable
+	
+	$_COOKIE['number1'];
+	$_COOKIE['city'];
+	$_COOKIE['state'];
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	

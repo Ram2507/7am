@@ -1,0 +1,52 @@
+.container{
+	border:1px solid;
+	width:900px;
+	margin:0px auto;
+}
+.header{
+	background-color:#1e6a9b;
+	padding:5px;
+}
+.logo,.mainmenu{
+	display:inline-block;
+}
+
+.mainmenu ul{
+	margin-top:-46px;
+}
+.mainmenu ul li{
+	float:left;
+	list-style-type:none;
+	padding:10px;
+}
+.mainmenu ul li a{
+	color:#fff;
+	text-decoration:none;
+}
+.avatar{
+	    border-radius: 50%;
+    margin-top: -7px;
+    position: absolute;
+    margin-left: -59px;
+	
+}
+.footer{
+	background:#1e6a9b;
+	padding:4px;
+}
+.footer p{
+	text-align:center;
+	color:#fff;
+}
+table{width:100%}
+table td{padding:10px;}
+table tr:nth-child(even){
+	background-color:#efefef;
+}
+table tr:nth-child(odd){
+	background-color:#d4d4d4;
+}
+table tr:hover{
+	background-color:#d8d8d8;
+}
+h1{text-align:center;}
